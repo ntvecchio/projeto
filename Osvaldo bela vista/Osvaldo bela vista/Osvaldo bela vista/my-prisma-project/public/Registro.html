@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro </title>
+    <link rel="shortcut icon" href="img/Logotipo.ico" type="image/x-icon">
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f7f7;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        form {
+            background-color: #3c3c3c;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+        input[type="text"], input[type="email"], input[type="password"], select, input[type="date"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ffffff;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #ffffff;
+            color: rgb(0, 0, 0);
+            padding: 12px 20px;
+            border: none;
+            border-radius: 11px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        input[type="submit"]:hover {
+            background-color: #ffffff;
+        }
+        h2 {
+            text-align: center;
+            color: white;
+            margin-bottom: 20px;
+        }
+        label {
+            font-weight: bold;
+            color: white;
+        }
+        ::placeholder {
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registro</title>
+    </head>
+    <body>
+        <form id="registro-form">
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" required>
+    
+            <label for="usuario">Usuário:</label>
+            <input type="text" id="usuario" name="usuario" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required>
+    
+            <label for="confirmaSenha">Confirmar Senha:</label>
+            <input type="password" id="confirmaSenha" name="confirmaSenha" required>
+    
+            <label for="telefone">Telefone:</label>
+            <input type="text" id="telefone" name="telefone">
+    
+            <label for="nascimento">Data de Nascimento:</label>
+            <input type="date" id="nascimento" name="nascimento">
+    
+            <label for="sexo">Sexo:</label>
+            <select id="sexo" name="sexo" required>
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+                <option value="outro">Outro</option>
+            </select>
+    
+            <button type="submit">Registrar</button>
+        </form>
+    
+        <script>
+            document.getElementById('registro-form').addEventListener('submit', async function(event) {
+                event.preventDefault(); // Evitar o comportamento padrão de envio do formulário
+    
+                const nome = document.getElementById('nome').value;
+                const usuario = document.getElementById('usuario').value;
+                const email = document.getElementById('email').value;
+                const senha = document.getElementById('senha').value;
+                const confirmaSenha = document.getElementById('confirmaSenha').value;
+                const telefone = document.getElementById('telefone').value;
+                const nascimento = document.getElementById('nascimento').value;
+                const sexo = document.getElementById('sexo').value;
+    
+                try {
+                    const response = await fetch('http://localhost:3001/registro', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({ nome, usuario, email, senha, confirmaSenha, telefone, nascimento, sexo })
+                    });
+    
+                    const data = await response.json();
+    
+                    if (response.ok) {
+                        alert(data.message);
+                        window.location.href = 'login.html'; // Redireciona para a página de login após o registro bem-sucedido
+                    } else {
+                        alert(data.message);
+                    }
+                } catch (error) {
+                    console.error('Erro no registro:', error);
+                    alert('Ocorreu um erro ao realizar o registro. Por favor, tente novamente.');
+                }
+            });
+        </script>
+    </body>
+    </html>
+    

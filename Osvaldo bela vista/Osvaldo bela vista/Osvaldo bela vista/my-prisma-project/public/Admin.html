@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/pag1.css">
+</head>
+<body>
+    <header>
+        <div class="px-3 py-2 text-bg-dark border-bottom">
+          <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+              <a href="/" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
+                <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+              </a>
+              <img src="img/resort bela vista.png" width="10%" class="position-absolute top-0 start-3">
+              <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+                <symbol id="home" viewBox="0 0 16 16">
+                  <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"/>
+                </symbol>
+                <symbol id="speedometer2" viewBox="0 0 16 16">
+                  <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"/>
+                </symbol>
+                <symbol id="table" viewBox="0 0 16 16">
+                  <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"/>
+                </symbol>
+                <symbol id="people-circle" viewBox="0 0 16 16">
+                  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                  <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                </symbol>
+                <symbol id="grid" viewBox="0 0 16 16">
+                  <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
+                  <path d="M1.5 2A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2zm13 1a.5.5 0 0 1 .5.5v6l-3.775-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12v.54L1 12.5v-9a.5.5 0 0 1 .5-.5z"/>
+                </symbol>
+              </svg>
+              <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+                <li>
+                  <a href="Pag1.html" class="nav-link text-white">
+                    <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#home"></use></svg>
+                    Home
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="Reserva.html" class="nav-link text-white">
+                    <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#table"></use></svg>
+                    Reserva
+                  </a>
+                </li>
+                <li>
+                  <a href="Atrações.html" class="nav-link text-white">
+                    <svg class="bi d-block mx-auto mb-1" width="24" height="24" fill="currentColor" class="bi bi-card-image" viewBox="0 0 16 16"><use xlink:href="#grid"></use></svg>
+                    Atrações
+                  </a>
+                </li>
+                <li>
+                  <a href="Login.html" class="nav-link text-white" id="login-header">
+                    <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#people-circle"></use></svg>
+                    Login
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header><br>
+    <div class="container">
+        <h1>Admin Page</h1>
+        
+        <div class="mb-3">
+            <button class="btn btn-primary" onclick="showAddModal('user')">Adicionar Usuário</button>
+            <button class="btn btn-primary" onclick="showAddModal('admin')">Adicionar Administrador</button>
+        </div>
+
+        <h2>Usuários</h2>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome Completo</th>
+                    <th>Email</th>
+                    <th>Telefone</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="user-tbody">
+                <!-- Linhas de usuários serão inseridas aqui -->
+            </tbody>
+        </table>
+
+        <h2>Administradores</h2>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome Completo</th>
+                    <th>Email</th>
+                    <th>Telefone</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="admin-tbody">
+                <!-- Linhas de administradores serão inseridas aqui -->
+            </tbody>
+        </table>
+    </div>
+
+    <div class="modal fade" id="add-user-Modal" tabindex="-1" aria-labelledby="addUserModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="addUserModalLabel">Adicionar Usuário</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="addForm-user">
+                        <div class="mb-3">
+                            <label for="name-user" class="form-label">Nome Completo</label>
+                            <input type="text" class="form-control" id="name-user" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email-user" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email-user" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone-user" class="form-label">Telefone</label>
+                            <input type="text" class="form-control" id="phone-user" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password-user">Senha</label>
+                            <input type="password" class="form-control" id="password-user" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Adicionar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="add-admin-Modal" tabindex="-1" aria-labelledby="addAdminModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="addAdminModalLabel">Adicionar Administrador</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="addForm-admin">
+                        <div class="mb-3">
+                            <label for="name-admin" class="form-label">Nome Completo</label>
+                            <input type="text" class="form-control" id="name-admin" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email-admin" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email-admin" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone-admin" class="form-label">Telefone</label>
+                            <input type="text" class="form-control" id="phone-admin" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Adicionar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="edit-admin-Modal" tabindex="-1" aria-labelledby="edit-admin-Modal-label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="edit-admin-Modal-label">Editar Administrador</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <input type="hidden" id="edit-admin-id">
+                    <div class="form-group">
+                        <label for="edit-admin-name">Nome Completo</label>
+                        <input type="text" class="form-control" id="edit-admin-name">
+                    </div>
+                    <div class="form-group">
+                        <label for="edit-admin-email">Email</label>
+                        <input type="email" class="form-control" id="edit-admin-email">
+                    </div>
+                    <div class="form-group">
+                        <label for="edit-admin-phone">Telefone</label>
+                        <input type="text" class="form-control" id="edit-admin-phone">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary" onclick="updateAdmin()">Salvar Alterações</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="edit-user-Modal" tabindex="-1" aria-labelledby="edit-user-Modal-label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="edit-user-Modal-label">Editar Usuário</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <input type="hidden" id="edit-user-id">
+                    <div class="form-group">
+                        <label for="edit-user-name">Nome Completo</label>
+                        <input type="text" class="form-control" id="edit-user-name">
+                    </div>
+                    <div class="form-group">
+                        <label for="edit-user-email">Email</label>
+                        <input type="email" class="form-control" id="edit-user-email">
+                    </div>
+                    <div class="form-group">
+                        <label for="edit-user-phone">Telefone</label>
+                        <input type="text" class="form-control" id="edit-user-phone">
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary" onclick="updateUser()">Salvar Alterações</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+       document.addEventListener('DOMContentLoaded', async () => {
+            try {
+                const response = await fetch('http://localhost:3001/user');
+                const users = await response.json();
+                console.log(users); // Adicione isto para ver os dados recebidos no console
+                const tbody = document.getElementById('user-tbody');
+
+                users.forEach(user => {
+                    const row = document.createElement('tr');
+                    row.setAttribute('data-id', user.id);
+                    row.innerHTML = `
+                        <td>${user.id}</td>
+                        <td>${user.nome_completo}</td>
+                        <td>${user.email}</td>
+                        <td>${user.telefone}</td>
+                        <td>
+                            <button class="btn btn-sm btn-primary" onclick="editUser(${user.id})">Editar</button>
+                            <button class="btn btn-sm btn-danger" onclick="deleteUser(${user.id})">Excluir</button>
+                        </td>
+                    `;
+                    tbody.appendChild(row);
+                });
+            } catch (error) {
+                console.error('Erro ao buscar os usuários:', error);
+            }
+        });
+
+        document.addEventListener('DOMContentLoaded', async () => {
+            try {
+                const response = await fetch('http://localhost:3001/administrador');
+                const admins = await response.json();
+                console.log(admins); // Adicione isto para ver os dados recebidos no console
+                const tbody = document.getElementById('admin-tbody');
+
+                admins.forEach(admin => {
+                    const row = document.createElement('tr');
+                    row.setAttribute('data-id', admin.id);
+                    row.innerHTML = `
+                        <td>${admin.id}</td>
+                        <td>${admin.nome_completo}</td>
+                        <td>${admin.email}</td>
+                        <td>${admin.telefone}</td>
+                        <td>
+                            <button class="btn btn-sm btn-primary" onclick="editAdmin(${admin.id})">Editar</button>
+                            <button class="btn btn-sm btn-danger" onclick="deleteAdmin(${admin.id})">Excluir</button>
+                        </td>
+                    `;
+                    tbody.appendChild(row);
+                });
+            } catch (error) {
+                console.error('Erro ao buscar os administradores:', error);
+            }
+        });
+
+        function showAddModal(type) {
+            if (type === 'user') {
+                $('#add-user-Modal').modal('show');
+            } else if (type === 'admin') {
+                $('#add-admin-Modal').modal('show');
+            }
+        }
+
+        document.getElementById('addForm-user').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const name = document.getElementById('name-user').value;
+    const email = document.getElementById('email-user').value;
+    const phone = document.getElementById('phone-user').value;
+    const password = document.getElementById('password-user').value;
+
+    try {
+        const response = await fetch('http://localhost:3001/user', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ nome_completo: name, email: email, telefone: phone, senha: password })
+        });
+
+        if (response.ok) {
+            $('#add-user-Modal').modal('hide');
+            location.reload();
+        } else {
+            console.error('Erro ao adicionar usuário');
+        }
+    } catch (error) {
+        console.error('Erro ao adicionar usuário:', error);
+    }
+});
+
+
+        document.getElementById('addForm-admin').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const name = document.getElementById('name-admin').value;
+            const email = document.getElementById('email-admin').value;
+            const phone = document.getElementById('phone-admin').value;
+            
+            try {
+                const response = await fetch('http://localhost:3001/administrador', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ nome_completo: name, email, telefone: phone })
+                });
+
+                if (response.ok) {
+                    $('#add-admin-Modal').modal('hide');
+                    location.reload();
+                } else {
+                    console.error('Erro ao adicionar administrador');
+                }
+            } catch (error) {
+                console.error('Erro ao adicionar administrador:', error);
+            }
+        });
+
+        function editUser(id) {
+            // Preencher o formulário com os dados do usuário a ser editado
+            const row = document.querySelector(`#user-tbody tr[data-id='${id}']`);
+            const name = row.children[1].innerText;
+            const email = row.children[2].innerText;
+            const phone = row.children[3].innerText;
+            document.getElementById('edit-user-id').value = id;
+            document.getElementById('edit-user-name').value = name;
+            document.getElementById('edit-user-email').value = email;
+            document.getElementById('edit-user-phone').value = phone;
+            $('#edit-user-Modal').modal('show');
+        }
+
+        async function updateUser() {
+            const id = document.getElementById('edit-user-id').value;
+            const name = document.getElementById('edit-user-name').value;
+            const email = document.getElementById('edit-user-email').value;
+            const phone = document.getElementById('edit-user-phone').value;
+            
+            try {
+                const response = await fetch(`http://localhost:3001/user/${id}`, {
+                    method: 'PUT',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ nome_completo: name, email, telefone: phone })
+                });
+
+                if (response.ok) {
+                    $('#edit-user-Modal').modal('hide');
+                    location.reload();
+                } else {
+                    console.error('Erro ao atualizar usuário');
+                }
+            } catch (error) {
+                console.error('Erro ao atualizar usuário:', error);
+            }
+        }
+
+        async function deleteUser(id) {
+            try {
+                const response = await fetch(`http://localhost:3001/user/${id}`, {
+                    method: 'DELETE'
+                });
+
+                if (response.ok) {
+                    location.reload();
+                } else {
+                    console.error('Erro ao excluir usuário');
+                }
+            } catch (error) {
+                console.error('Erro ao excluir usuário:', error);
+            }
+        }
+
+        function editAdmin(id) {
+            // Preencher o formulário com os dados do administrador a ser editado
+            const row = document.querySelector(`#admin-tbody tr[data-id='${id}']`);
+            const name = row.children[1].innerText;
+            const email = row.children[2].innerText;
+            const phone = row.children[3].innerText;
+            document.getElementById('edit-admin-id').value = id;
+            document.getElementById('edit-admin-name').value = name;
+            document.getElementById('edit-admin-email').value = email;
+            document.getElementById('edit-admin-phone').value = phone;
+            $('#edit-admin-Modal').modal('show');
+        }
+
+        async function updateAdmin() {
+            const id = document.getElementById('edit-admin-id').value;
+            const name = document.getElementById('edit-admin-name').value;
+            const email = document.getElementById('edit-admin-email').value;
+            const phone = document.getElementById('edit-admin-phone').value;
+            
+            try {
+                const response = await fetch(`http://localhost:3001/administrador/${id}`, {
+                    method: 'PUT',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ nome_completo: name, email, telefone: phone })
+                });
+
+                if (response.ok) {
+                    $('#edit-admin-Modal').modal('hide');
+                    location.reload();
+                } else {
+                    console.error('Erro ao atualizar administrador');
+                }
+            } catch (error) {
+                console.error('Erro ao atualizar administrador:', error);
+            }
+        }
+
+        async function deleteAdmin(id) {
+            try {
+                const response = await fetch(`http://localhost:3001/administrador/${id}`, {
+                    method: 'DELETE'
+                });
+
+                if (response.ok) {
+                    location.reload();
+                } else {
+                    console.error('Erro ao excluir administrador');
+                }
+            } catch (error) {
+                console.error('Erro ao excluir administrador:', error);
+            }
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head><script src="color-modes.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.122.0">
+    <title>Atrações</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="apple-touch-icon" href="/docs/5.3/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="manifest" href="/docs/5.3/assets/img/favicons/manifest.json">
+    <link rel="mask-icon" href="/docs/5.3/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
+    <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon.ico">
+    <link rel="shortcut icon" href="img/Logotipo.ico" type="image/x-icon">
+<meta name="theme-color" content="#712cf9">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        width: 100%;
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .btn-bd-primary {
+        --bd-violet-bg: #712cf9;
+        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+        --bs-btn-font-weight: 600;
+        --bs-btn-color: var(--bs-white);
+        --bs-btn-bg: var(--bd-violet-bg);
+        --bs-btn-border-color: var(--bd-violet-bg);
+        --bs-btn-hover-color: var(--bs-white);
+        --bs-btn-hover-bg: #6528e0;
+        --bs-btn-hover-border-color: #6528e0;
+        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+        --bs-btn-active-color: var(--bs-btn-hover-color);
+        --bs-btn-active-bg: #5a23c8;
+        --bs-btn-active-border-color: #5a23c8;
+      }
+
+      .bd-mode-toggle {
+        z-index: 1500;
+      }
+
+      .bd-mode-toggle .dropdown-menu .active .bi {
+        display: block !important;
+      }
+      footer {
+      background-color: #000;
+      color: #fff;
+      padding: 40px 0;
+    }
+    .footer a {
+      color: #fff;
+      transition: color 0.3s;
+    }
+    .footer a:hover {
+      color: #ccc;
+    }
+    .footer h5 {
+      border-bottom: 2px solid #fff;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+      font-size: 18px;
+      color: #fff;
+    }
+    .footer p, .footer a {
+      font-size: 14px;
+      color: #fff;
+    }
+    .footer .social a {
+      font-size: 20px;
+      margin-right: 15px;
+      color: #fff;
+    }
+    .footer .social a:hover {
+      color: #ccc;
+    }
+    .footer-bottom {
+      text-align: center;
+      padding-top: 20px;
+      border-top: 1px solid #fff;
+      margin-top: 20px;
+      color: #fff;
+
+      }
+
+      .footer h5.text-white {
+  color: #fff;
+}
+
+    
+
+      
+     
+
+
+    </style>
+
+    
+  </head>
+  <body>
+    <header>
+      <div class="px-3 py-2 text-bg-dark border-bottom">
+        <div class="container">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="/" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
+              <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+            </a>
+    
+            <img src="img/resort bela vista.png" width="10%" class="position-absolute top-0 start-3">
+            <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+    
+              <symbol id="home" viewBox="0 0 16 16">
+                <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"/>
+              </symbol>
+              
+              <symbol id="speedometer2" viewBox="0 0 16 16">
+                <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"/>
+              </symbol>
+              
+              <symbol id="table" viewBox="0 0 16 16">
+                <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"/>
+              </symbol>
+              
+              <symbol id="people-circle" viewBox="0 0 16 16">
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+              </symbol>
+              
+              <symbol id="grid" viewBox="0 0 16 16">
+                <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
+                <path d="M1.5 2A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2zm13 1a.5.5 0 0 1 .5.5v6l-3.775-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12v.54L1 12.5v-9a.5.5 0 0 1 .5-.5z"/>
+              </symbol>
+            </svg>
+            <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+              <li>
+                <a href="Pag1.html" class="nav-link text-white">
+                  <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#home"></use></svg>
+                  Home
+                </a>
+              </li>
+    
+              <li class="nav-item">
+                <a href="Reserva.html" class="nav-link text-white">
+                    <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#table"></use></svg>
+                    Reserva
+                </a>
+              </li>
+          
+              <li>
+                <a href="Atrações.html" class="nav-link text-white">
+                  <svg class="bi d-block mx-auto mb-1" width="24" height="24" fill="currentColor" class="bi bi-card-image" viewBox="0 0 16 16"><use xlink:href="#grid"></use></svg>
+                  Atrações
+                </a>
+              </li>
+    
+              <li>
+                <a href="Login.html" class="nav-link text-white">
+                  <svg class="bi d-block mx-auto mb-1" width="24" height="24"><use xlink:href="#people-circle"></use></svg>
+                  Login
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header><br>
+<main>
+  <section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light">Nossas Atrações!</h1>
+        <p class="lead text-body-secondary">Bem-vindo ao Bela Vista Resort! Aqui, você vai descobrir um lugar onde a tranquilidade se mistura com a diversão. Com uma variedade de opções gastronômicas para agradar a todos os paladares e espaços relaxantes para recarregar as energias, cada momento é uma experiência especial. Junte-se a nós para desfrutar de tudo o que o Bela Vista tem para oferecer!</p>
+        <p>
+        </p>
+      </div>
+    </div>
+  </section>
+  <div class="album py-5 bg-body-tertiary">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#55595c"/>
+                <image xlink:href=https://ddrio.com/wp-content/uploads/2021/03/foto-sunset-03.jpg width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
+            </svg>
+            <div class="card-body">
+              <h3>Sunset tour</h3>
+              <p class="card-text">Em nosso Sunset Tour de barco, navegue pelas águas tranquilas enquanto o sol se põe no horizonte, oferecendo vistas espetaculares. Relaxe ao som das ondas e capture momentos inesquecíveis da paisagem em constante mudança. Com guias experientes, explore a rica história local enquanto celebra o espetáculo final de cores vibrantes do entardecer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">             
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
+             <image xlink:href=https://plus.unsplash.com/premium_photo-1664300011772-81d601231d49?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
+            </svg>
+            <div class="card-body">
+              <h3>Excursão de Canoa</h3>
+              <p class="card-text">Descubra a tranquilidade do passeio de canoa enquanto o sol se põe lentamente no horizonte, tingindo o céu de tons dourados e alaranjados. Navegue pelas águas serenas, onde o reflexo das cores do entardecer se mistura harmoniosamente com a natureza exuberante ao seu redor. Deixe-se envolver pelo canto suave dos pássaros.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">                               
+                </div>               
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
+              <image xlink:href=https://s2.glbimg.com/TYVOVw7XXf6DwUashZWbGR3eZoY=/512x320/smart/e.glbimg.com/og/ed/f/original/2021/09/02/predio-tombado-de-1940-em-sao-paulo-recebe-novo-restaurante-italiano_5.jpg width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
+             </svg>
+            <div class="card-body">
+              <h3>Restaurante</h3>
+              <p class="card-text">
+                Desfrute de uma experiência gastronômica única no Restaurante Bela Vista, o coração culinário do nosso resort. Delicie-se com uma variedade de pratos cuidadosamente preparados, ressaltando ingredientes frescos e locais, enquanto admira a deslumbrante vista panorâmica ao seu redor. Seja para uma refeição em família memorável ou um encontro romântico.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">              
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
+              <image xlink:href="https://invexo.com.br/blog/wp-content/uploads/2023/03/parque-o-que-fazer-no-jardim-botanico-rio-de-janeiro.jpg" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" />
+            </svg>
+            <div class="card-body">
+              <h3>Jardim Botânico</h3>
+              <p class="card-text">
+                Descubra um refúgio verde no coração da cidade, onde as cores vivas das flores se misturam harmoniosamente com o verde exuberante das árvores. Passeie por trilhas sinuosas, respire o ar puro e sinta-se revitalizado pela energia natural que permeia cada canto deste oásis urbano.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                                
+                </div>
+                <small class="text-body-secondary"></small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text> 
+              <image xlink:href=https://www.recantodossonhos.com.br/wp-content/uploads/2019/02/post-1-1080x675.png width="100%" height="100%" preserveAspectRatio="xMidYMid slice"/> </svg>
+            <div class="card-body">
+              <h3>Trilhas</h3>
+              <p class="card-text">
+                Embarque em uma jornada de descoberta e maravilha enquanto desbrava nossa trilha cuidadosamente planejada, que revela tesouros naturais a cada passo. Seja você um entusiasta da natureza ávido por novas aventuras ou um amante da tranquilidade nossa trilha oferece o cenário perfeito.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                 
+                </div>
+                <small class="text-body-secondary"></small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
+              <image xlink:href=https://i.pinimg.com/550x/db/49/37/db493710fd6dc1c43fa0e45d31b2a7c4.jpg width="100%" height="100%" preserveAspectRatio="xMidYMid slice"/> </svg></svg>
+             </svg>
+            <div class="card-body">
+              <h3>Bar</h3>
+              <p class="card-text">
+                No nosso animado bar, a diversão está sempre garantida. Aqui, cada gole é uma aventura de sabores, com coquetéis artesanais meticulosamente preparados para satisfazer até os paladares mais exigentes. Junte-se a nós para uma experiência única, onde a boa música e as risadas contagiantes.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                         
+                </div>
+                <small class="text-body-secondary"></small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
+              <image xlink:href=https://orlario.com.vc/wp-content/uploads/2020/10/Pesca-esportiva.jpg width="100%" height="100%" preserveAspectRatio="xMidYMid slice"/> </svg>
+            </svg>
+             
+            <div class="card-body">
+              <h3>Pesca-Esportiva</h3>
+              <p class="card-text">Embarque em uma aventura de pesca conosco. Navegue pelas águas tranquilas e mergulhe na emoção de capturar peixes exuberantes. Com equipamentos de alta qualidade e guias experientes, garantimos uma experiência emocionante e gratificante para pescadores de todos os níveis. Descubra o prazer da pesca conosco hoje!</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                               
+                </div>
+                <small class="text-body-secondary"></small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
+              <image xlink:href=https://selesnafes.com/wp-content/uploads/2023/09/piquenique-parque-do-forte-1.jpeg width="100%" height="100%" preserveAspectRatio="xMidYMid slice"/> </svg>
+            </svg>
+            
+            <div class="card-body">
+              <h3>Piquenique</h3>
+              <p class="card-text">Aproveite um piquenique em meio à natureza. Escolha um local pitoresco, estenda sua toalha e desfrute de uma refeição ao ar livre cercado por paisagens deslumbrantes. Traga sua cesta de iguarias favoritas e compartilhe momentos felizes com amigos e família neste cenário tranquilo e encantador. Delicie-se com o banquete de sabores que a natureza oferece!</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                </div>
+                <small class="text-body-secondary"></small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
+              <image xlink:href=https://midias.agazeta.com.br/2024/01/24/cachoeira-do-rogerio-em-iuna-e-destaque-do-deu-cachu-1991256.jpeg width="100%" height="100%" preserveAspectRatio="xMidYMid slice"/> </svg>
+            </svg>
+            
+            <div class="card-body">
+              <h3>Cachoeira</h3>
+              <p class="card-text">Descubra a serenidade de nossa cachoeira escondida. Deixe-se encantar pelo som das águas cristalinas que caem em meio à exuberante vegetação. Refresque-se nas piscinas naturais e revitalize-se sob a queda d'água. Um paraíso intocado aguarda por você, onde cada momento é uma conexão renovadora com a natureza.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                                  
+                </div>
+                <small class="text-body-secondary"></small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="text-body-secondary py-5">
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h5>Sobre Nós</h5>
+          
+          <p>
+            Deseja saber mais sobre como transformamos férias em experiências inesquecíveis? Entre em contato conosco para obter mais informações sobre nossos pacotes personalizados, atividades emocionantes e serviços excepcionais. Estamos aqui para tornar sua estadia no [Nome do Resort] verdadeiramente memorável.
+          </p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <h5>Siga-nos</h5>
+          <div class="social">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom mt-4">
+        <p>&copy; 2024 Resort Bela Vista. Todos os direitos reservados.</p>
+      </div>
+    </div>
+</footer>
+<div class="container"></div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="index.js">
+</script> </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    </body>
+</html>
